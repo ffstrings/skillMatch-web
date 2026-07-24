@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare suas habilidades com vagas de Front-End Júnior e descubra sua compatibilidade.">
+  <title>SkillMatch JS — Simulador de Compatibilidade</title>
+  <link rel="stylesheet" href="./assets/styles/index.style.css">
+</head>
+
+<body>
+
+  <!-- CABECALHO -->
+  <header>
+    <img src="./assets/img/logo.svg" alt="Logo SkillMatch JS">
+    <h1>SkillMatch JS</h1>
+    <p>Descubra sua compatibilidade com vagas de Front-End Júnior</p>
+  </header>
+
+  <!-- FORMULARIO DE PERFIL -->
+  <main>
+    <section aria-label="Formulário de perfil do candidato">
+      <h2>Seu Perfil</h2>
+
+      <form id="form-perfil">
+
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+          <span class="erro" id="erro-nome"></span>
+        </div>
+
+        <div class="campo">
+          <label for="area">Área de interesse</label>
+          <input type="text" id="area" name="area" placeholder="Ex: Front-End" required>
+          <span class="erro" id="erro-area"></span>
+        </div>
+
+        <div class="campo">
+          <label for="habilidades">Habilidades</label>
+          <input type="text" id="habilidades" name="habilidades" placeholder="Ex: JavaScript, HTML, CSS" required>
+          <span class="erro" id="erro-habilidades"></span>
+          <small>Separe as habilidades por vírgula</small>
+        </div>
+
+        <div class="campo">
+          <label for="experiencia">Meses de experiência</label>
+          <input type="number" id="experiencia" name="experiencia" placeholder="Ex: 6" min="0">
+        </div>
+
+        <button type="submit">Analisar compatibilidade</button>
+
+      </form>
+    </section>
+
+    <!-- AREA DE RESULTADOS -->
+    <section aria-label="Resultados da análise" id="resultados" aria-live="polite">
+      <!-- Os cards são gerados pelo JavaScript -->
+    </section>
+
+  </main>
+
+  <!-- RODAPE -->
+  <footer>
+    <p>SkillMatch JS &copy; 2026 — Desenvolvido por Ana</p>
+  </footer>
+
+  <script type="module" src="./assets/scripts/main.js"></script>
+
+</body>
+
+</html>
