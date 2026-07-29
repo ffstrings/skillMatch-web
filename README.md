@@ -127,7 +127,7 @@ Salva o perfil do candidato entre sessoes com JSON.stringify e JSON.parse, trata
 ## Links do projeto
 
 - Repositorio: https://github.com/ffstrings/skillMatch-web
-- Kanban: adicione o link aqui
+- Kanban: https://github.com/users/ffstrings/projects/3 
 - Video de apresentacao: adicione o link aqui
 
 ---
